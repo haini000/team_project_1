@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   /* Layout */
@@ -80,6 +81,10 @@ header nav ul li:last-child{
   text-transform: uppercase;
   display: flex;
   color: var(--black);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {

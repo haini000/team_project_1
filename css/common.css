@@ -2,6 +2,9 @@
 @import url("normalize.css");
 
 :root {
+  /* Layout */
+  --container:1272px;
+
   /* color */
   --main-color: rgba(50, 75, 150, 1);
   --serve-bg: rgba(43, 48, 65, 1);
@@ -22,6 +25,61 @@
   --font-sm: calc(var(--body) * 0.8); /* 16px */
   --font-xs: calc(var(--body) * 0.7); /* 14px */
   --font-xxs: calc(var(--body) * 0.5); /* 10px */
+}
+/* Layout */
+.container{
+  width: var(--container);
+  margin: 0 auto;
+}
+.hidden{
+  position: absolute;
+  left: 0;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.btn{
+  height: 45px;
+  padding: 0 50px;
+  background: var(--main-color);
+  color: var(--white);
+  font-size: calc(var(--body) * 0.9);
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+}
+/*  COLOR */
+.bnt_bg{
+  background: #36436B;
+}
+/*  HEADER  */
+header {
+  background: var(--white);
+  padding: var(--base-unit) 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+}
+header  > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  margin: 0;
+}
+header nav ul{
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+header nav ul li:last-child{
+  font-size: 60px;
+  text-transform: uppercase;
+  display: flex;
+  color: var(--black);
 }
 
 body {

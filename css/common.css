@@ -1,2 +1,29 @@
-@import url('reset.css');
-@import url('normalize.css');
+@import url("reset.css");
+@import url("normalize.css");
+
+:root {
+  /* color */
+  --main-color: rgba(50, 75, 150, 1);
+  --serve-bg: rgba(43, 48, 65, 1);
+  --medium-gray: rgba(119, 119, 119, 1);
+  --black: rgba(25, 25, 25, 1);
+  --white: rgba(255, 255, 255, 1);
+  --light-blue: #7cc5fc;
+
+  /* font */
+  --font-main: "Roboto", sans-serif;
+
+  /* Text-size styles */
+  --body: 20px;
+  --font-xxl: calc(var(--body) * 1.8); /* 36px */
+  --font-xl: calc(var(--body) * 1.5); /* 30px */
+  --font-lg: calc(var(--body) * 1.2); /* 24px */
+  --font-md: var(--body); /* 20px */
+  --font-sm: calc(var(--body) * 0.8); /* 16px */
+  --font-xs: calc(var(--body) * 0.7); /* 14px */
+  --font-xxs: calc(var(--body) * 0.5); /* 10px */
+}
+
+body {
+  font-family: var(--font-main);
+}

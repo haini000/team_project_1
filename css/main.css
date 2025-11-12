@@ -1,1 +1,477 @@
-@import url("text-introduce-part.css");
+/* intrpduce css */
+
+.text-introduce {
+  padding: 86px 0;
+}
+
+.text-introduce .title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-area p:first-of-type {
+  font-size: var(--font-lg);
+  color: var(--medium-gray);
+  margin-bottom: 11px;
+}
+
+.text-introduce h2 {
+  font-size: var(--font-xxl);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-introduce .divide-line {
+  width: 504px;
+  height: 4px;
+  background: var(--main-color);
+  margin-bottom: 36px;
+}
+
+.title-area p:last-of-type {
+  margin-bottom: 54px;
+  color: var(--medium-gray);
+  font-size: var(--font-md);
+}
+
+.text-introduce ul {
+  display: flex;
+  justify-content: center;
+  gap: 77px;
+}
+
+.text-introduce ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
+  width: 300px;
+  background: var(--serve-bg);
+  border-radius: 15px;
+  padding: 26px;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-introduce ul li > h3 {
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: var(--font-lg);
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.text-introduce ul li h3 img {
+  width: 29px;
+  height: 29px;
+}
+
+.text-introduce .course-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 33px;
+  color: white;
+}
+
+.text-introduce .course-intro p:first-of-type {
+  font-size: var(--font-lg);
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.text-introduce .course-intro p:nth-of-type(2) {
+  font-weight: 300;
+  font-size: var(--font-md);
+  line-height: 23px;
+  margin-bottom: 39px;
+}
+
+.text-introduce .course-intro p:last-of-type {
+  font-weight: 300;
+  font-size: var(--font-md);
+  text-align: center;
+  line-height: 23px;
+}
+
+.text-introduce .schedule-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 29px;
+}
+
+.text-introduce .schedule-intro h4 {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.text-introduce .schedule-intro h4:last-of-type {
+  margin-top: 28px;
+}
+
+.text-introduce .schedule-intro p {
+  font-size: var(--font-md);
+  font-weight: 300;
+  margin-top: 7px;
+  line-height: 23px;
+}
+
+.tuition-intro {
+  color: white;
+  text-align: center;
+}
+.tuition-intro p:first-of-type {
+  font-weight: 400;
+  color: var(--medium-gray);
+  text-decoration: line-through;
+  margin: 11px 0 3px;
+  line-height: 19px;
+}
+.tuition-intro p:nth-of-type(2) {
+  font-size: var(--font-lg);
+  margin-bottom: 14px;
+  line-height: 28px;
+}
+.tuition-intro-divide {
+  width: 200px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 26px;
+}
+.tuition-intro p:last-of-type {
+  font-size: var(--font-lg);
+  margin-top: 18px;
+}
+
+/* reason css */
+
+.reason {
+  background: #36436b;
+  height: 567px;
+  padding: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+
+.reason h2 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--white);
+  line-height: 140%;
+}
+
+.reason ul {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.reason ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  height: 294px;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 19px 0;
+}
+
+.reason ul li > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  border: 2px solid black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.reason ul li h3 {
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
+.reason ul li:nth-child(2) p:first-of-type {
+  margin-top: 20px;
+  font-size: var(--font-xxs);
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+.reason ul li:nth-child(2) p:last-of-type {
+  margin-top: 3px;
+  font-size: var(--font-xxs);
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.reason ul li:first-child img {
+  margin-top: 25px;
+  width: 200px;
+}
+.reason ul li:nth-child(2) img {
+  margin-top: 25px;
+  width: 210px;
+}
+.reason ul li:nth-child(3) img {
+  margin-top: 40px;
+  width: 200px;
+}
+.reason ul li:last-child img {
+  margin-top: 20px;
+  width: 180px;
+}
+
+/* advantage css */
+
+/* main을 통합할 떄 합칠 에정  */
+.advantage {
+  text-align: center;
+  padding: 81px 0;
+}
+
+.advantage h2 {
+  font-size: var(--font-xxl);
+  margin-bottom: 70px;
+  font-weight: 600;
+}
+
+.advantage-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 24px;
+
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  background-color: #d1d1d1;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.advantage-item > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage-item .before {
+  font-size: var(--font-lg);
+  color: var(--block);
+  font-weight: bold;
+}
+
+.advantage-item .after {
+  background-color: #0afe7e;
+  flex-direction: column;
+  color: var(--white);
+  opacity: 0;
+  gap: 20px;
+}
+
+.advantage-item .after p {
+  font-size: var(--font-lg);
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.advantage-item:not(:first-child) .after p:last-child {
+  font-size: var(--font-md);
+  color: #514f4f;
+}
+
+.advantage-item:hover .before {
+  opacity: 0;
+}
+
+.advantage-item:hover .after {
+  opacity: 1;
+}
+
+hr.line {
+  width: 840px;
+  height: 3px;
+
+  background-color: #d1d1d1;
+
+  position: relative;
+
+  margin: 0 auto;
+}
+
+hr.line:before {
+  content: "";
+  position: absolute;
+  background-color: #d1d1d1;
+
+  width: 10px;
+  height: 10px;
+
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+hr.line:after {
+  content: "";
+  position: absolute;
+  background-color: #d1d1d1;
+
+  width: 10px;
+  height: 10px;
+
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* benefit - css */
+.benefits {
+  text-align: center;
+  padding: 81px 0 120px;
+}
+
+.benefits > h2 {
+  font-size: var(--font-xxl);
+  margin-bottom: 68px;
+  font-weight: 600;
+}
+
+.benefit-list {
+  display: flex;
+  text-align: left;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefit-list .left-item {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.benefit-item {
+  width: 624px;
+  background-color: #2b3041;
+  color: var(--white);
+  padding: 35px 95px 26px 25px;
+  box-sizing: border-box;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 10px;
+}
+
+.icon-title .icon {
+  font-size: 60px;
+}
+
+.icon-title h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.benefit-item > p {
+  margin-left: 83px;
+  line-height: 30px;
+  font-size: var(--font-md);
+}
+
+.support-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 27px;
+  margin-left: 76px;
+  gap: 43px;
+}
+
+.support-list li {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.support-list li .number-icon {
+  font-size: 30px;
+}
+
+/* faq css */
+
+.fixed-apply-button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 624px;
+  height: 81px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  margin-bottom: 15px;
+}
+
+.fixed-apply-button p {
+  color: var(--white);
+  font-weight: 500;
+  margin-left: 47px;
+}
+
+.fixed-apply-button a {
+  background: var(--light-blue);
+  width: 180px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  transition: 0.25s;
+}
+
+.fixed-apply-button a:hover {
+  background: #009dff;
+  color: white;
+}
+
+.fixed-inquiry-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 30px 20px 0;
+}
+
+.fixed-inquiry-button img {
+  width: 60px;
+  height: 60px;
+}

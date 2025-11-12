@@ -1,2 +1,79 @@
 @import url("text-introduce-part.css");
 @import url('advantage.css');
+
+.benefits {
+    text-align: center;
+    padding: 81px 0 120px;
+}
+
+.benefits > h2 {
+    font-size: var(--font-xxl);
+    margin-bottom: 68px;
+    font-weight: 600;
+}
+
+.benefit-list {
+    display: flex;
+    text-align: left;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.benefit-list .left-item {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.benefit-item {
+    width: 624px;
+    background-color: #2B3041;
+    color: var(--white);
+    padding: 35px 95px 26px 25px;
+    box-sizing: border-box;
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 10px;
+}
+
+.icon-title .icon {
+    font-size: 60px;
+}
+
+.icon-title h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.benefit-item > p {
+    margin-left: 83px;
+    line-height: 30px;
+    font-size: var(--font-md);
+}
+
+.support-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 27px;
+    margin-left: 76px;
+    gap: 43px;
+}
+
+.support-list li {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.support-list li .number-icon {
+    font-size: 30px;
+}

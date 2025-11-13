@@ -602,3 +602,53 @@ hr.line:after {
   font-size: 14px;
   font-weight: 600;
 }
+
+
+/*  FOOTER  */
+footer {
+  height: 324px;
+  background: #2F3138;
+  padding: 54px;
+}
+.footer-logo {
+  margin-bottom: 34px;
+}
+.footer-logo img{
+  height: auto;
+  display: block;
+}
+.container{
+  font-size: calc(var(--body) * 0.6);
+  font-weight: 500;
+  color: #D3D3D3;
+  display: flex;
+  gap: 109px;
+  margin-bottom: 26px;
+  margin-left: 0;
+  margin-right: auto;
+}
+.container p {
+  margin-bottom: 13px;
+}
+.container p:last-child {
+  margin-bottom: 0;
+}
+.footer-links {
+  display: flex;
+  gap: 63px;
+  margin-bottom: 26px;
+}
+.footer-links a {
+  font-size: calc(var(--body) * 0.6);
+  font-weight: 500;
+  color: var(--light-blue);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: var(--medium-gray);
+}
+footer > p {
+  font-size:calc(var(--body) * 0.6);
+  font-weight: 500;
+  color: var(--white);
+}

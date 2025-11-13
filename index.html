@@ -245,83 +245,78 @@
         </div>
       </div>
     </section>
-    <section>
-      <!-- 상세 커리큘럼 파트 구현 - 김세은 -->
+
+    <section class="de-cur container">
+      <!-- 상세 커리큘럼 파트 구현 - 신찬섭 -->
       <h2>상세 커리큘럼</h2>
       <div>
-        <ul>
-          <li><button>SKILL SET</button></li>
-          <li><button>1개월차</button></li>
-          <li><button>2개월차</button></li>
-          <li><button>3개월차</button></li>
-          <li><button>4개월차</button></li>
+        <ul class="tab-menu">
+          <li><a href="#">SKILL SET</a></li>
+          <li><a href="#month1">1개월차</a></li>
+          <li><a href="#month2">2개월차</a></li>
+          <li><a href="#month3">3개월차</a></li>
+          <li><a href="#month4">4개월차</a></li>
         </ul>
       </div>
-      <div>
-        <section>
-          <h3>HTML5 & Semantic Web</h3>
-          <ul>
-            <li>anstj 문서 구조</li>
-            <li>시맨틱 태그</li>
-            <li>웹 접근성</li>
-            <li>SEO 최적화</li>
-          </ul>
-        </section>
-        <section>
-          <h3>CSS3</h3>
-          <ul>
-            <li>선택자</li>
-            <li>박스모델</li>
-            <li>Flexbox</li>
-            <li>Grid</li>
-            <li>애니메이션</li>
-            <li>반응형 웹</li>
-          </ul>
-        </section>
-        <section>
-          <h3>CSS Framework</h3>
-          <ul>
-            <li>TailwindCSS</li>
-            <li>박스모델</li>
-            <li>
-              Bootstrap
-              <ul>
-                <li>유틸리티 클래스</li>
-                <li>컴포넌트</li>
-                <li>커스터마이징</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>Git & GitHub</h3>
-          <ul>
-            <li>버전 관리</li>
-            <li>원격 저장소</li>
-            <li>Github Pages 배포</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Figma</h3>
-          <ul>
-            <li>UI/UX 설계</li>
-            <li>와이어프레임</li>
-            <li>프로토타이핑</li>
-          </ul>
-        </section>
-        <section>
-          <h3>기초 웹 프로젝트</h3>
-          <ul>
-            <li>
-              HTML/CSS
-              <ul>
-                <li>레이아웃 구현</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
+
+      <div class="tab-contents">
+        <div id="skill">기술 상세</div>
+        <div id="month1" class="active">
+          <dl>
+            <dt>HTML5 & Semantic Web</dt>
+            <dd>anstj 문서 구조</dd>
+            <dd>시멘틱 코드</dd>
+            <dd>웹 접근성</dd>
+            <dd>SEO 최적화</dd>
+          </dl>
+
+          <dl>
+            <dt>CSS3</dt>
+            <dd>선택자</dd>
+            <dd>박스모델</dd>
+            <dd>Flexbox</dd>
+            <dd>Grid</dd>
+            <dd>에니메이션</dd>
+            <dd>반응형 웹</dd>
+          </dl>
+
+          <dl>
+            <dt>CSS Framework</dt>
+            <dd>ReilwindCSS</dd>
+            <dd>박스 모델</dd>
+            <dd>Bootstrap</dd>
+            <dd>유틸리티 클래스</dd>
+            <dd>컴포넌트</dd>
+            <dd>커스터마이징</dd>
+          </dl>
+
+          <dl>
+            <dt>Git & Github</dt>
+            <dd>버전 관리</dd>
+            <dd>원격 저장소</dd>
+            <dd>GitHup Pages 배포</dd>
+          </dl>
+
+          <dl>
+            <dt>Figma</dt>
+            <dd>Ul/UX 설계</dd>
+            <dd>와이어프레임</dd>
+            <dd>프로토타이핑</dd>
+          </dl>
+
+          <dl>
+            <dt>기초 웹 프로젝트</dt>
+            <dd>HTML/CSS</dd>
+            <dd>레이아웃 구현</dd>
+          </dl>
+        </div>
+        <div id="month2">3개월차 상세</div>
+        <div id="month3">3개월차 상세</div>
+        <div id="month4">4개월차 상세</div>
       </div>
     </section>
+
+
     <section>
       <!-- 수강후기 파트 구현 -->
       <h2>프론트엔드 수강후기</h2>
@@ -482,8 +477,8 @@
     <button class="fixed-inquiry-button">
       <img src="./images/inquiry_button.png" />
     </button>
-    <footer>
-      <!-- footer 파트 구현 - 조수현 -->
+    <footer class="footer">
+      <!-- footer 파트 구현 - 김세은 -->
       <div class="footer-logo">
         <img src="images/footer_est_logo.png" alt="">
       </div>

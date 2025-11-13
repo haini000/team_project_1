@@ -425,6 +425,49 @@ hr.line:after {
 
 /* faq css */
 
+.faq {
+  background: #f2f4fa;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+.faq h2 {
+  font-size: var(--font-xxl);
+  line-height: 40px;
+  font-weight: 600;
+}
+.faq summary {
+  cursor: pointer;
+  width: 448px;
+  min-height: 54px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: color 0.2s ease;
+  list-style: none;
+}
+.faq summary:hover {
+  color: rgba(0, 0, 0, 1);
+}
+.faq details > p {
+  max-width: 448px;
+  padding-top: 10px;
+}
+.faq details > p {
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* fixed elements css */
+
 .fixed-apply-button {
   position: fixed;
   display: flex;

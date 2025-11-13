@@ -151,7 +151,6 @@
 
 .reason {
   background: #36436b;
-  height: 567px;
   padding: 54px;
   display: flex;
   flex-direction: column;
@@ -407,7 +406,7 @@ hr.line:after {
   flex-direction: column;
   justify-content: center;
   margin-top: 27px;
-  margin-left: 76px;
+  margin-left: 51px;
   gap: 43px;
 }
 

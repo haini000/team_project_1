@@ -108,7 +108,8 @@ footer {
   height: auto;
   display: block;
 }
-.container{
+
+.footer .container{
   font-size: calc(var(--body) * 0.6);
   font-weight: 500;
   color: #D3D3D3;

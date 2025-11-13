@@ -478,7 +478,7 @@ hr.line:after {
 /*  Curriculum Re */
 .curriculum-re{
   height: 648px;
-  padding: 0 64px;
+  padding: 0 326px;
   background: linear-gradient(135deg, #324B96, #94475B);
   display: flex;
   justify-content: space-between;

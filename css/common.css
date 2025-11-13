@@ -72,6 +72,9 @@ header  > div{
 h1{
   margin: 0;
 }
+h1 > a {
+  display: block;
+}
 header nav ul{
   display: flex;
   align-items: center;

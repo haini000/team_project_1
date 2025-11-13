@@ -592,6 +592,97 @@ div.active > dl dd::before {
   font-size: var(--font-xs);
 }
 
+/* information */
+.information {
+  margin: 66px 0 81px;
+  padding: 34px;
+}
+.information h2 {
+  text-align: center;
+  font-size: var(--font-xxl);
+  font-weight: 600;
+  margin-bottom: 88px;
+}
+.information .content {
+  display: flex;
+  justify-content: center;
+  gap: 132px;
+}
+.information .basic-information {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.information .basic-information > div {
+  display: flex;
+  flex-direction: column;
+  width: 215px;
+  height: 134px;
+  border: 1px solid #2b3041;
+  border-radius: 5px;
+  padding: 11px;
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.15);
+}
+.information .basic-information div h3 {
+  width: 78px;
+  height: 23px;
+  background: var(--main-color);
+  color: var(--white);
+  border-radius: 40px;
+  text-align: center;
+  line-height: 23px;
+  font-weight: 700;
+}
+.information .basic-information div div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  font-weight: 600;
+}
+.information .basic-information .strike {
+  text-decoration: line-through;
+  color: #d3d3d3;
+}
+.information .course-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.information .course-information li {
+  display: flex;
+  align-items: center;
+  width: 624px;
+  height: 57px;
+  border: 1px solid #2b3041;
+  border-radius: 40px;
+  padding: 0 20px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.information .course-information li p:first-of-type {
+  width: 34px;
+  height: 34px;
+  background: var(--main-color);
+  text-align: center;
+  line-height: 34px;
+  color: var(--white);
+  border-radius: 17px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.information .course-information li h3 {
+  margin-left: 19px;
+  font-weight: 700;
+}
+.information .course-information li p:last-of-type {
+  flex: 1;
+  text-align: end;
+  color: #777777;
+}
+
 /* fixed elements css */
 
 .fixed-apply-button {

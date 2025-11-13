@@ -424,49 +424,6 @@ hr.line:after {
 
 /* faq css */
 
-.faq {
-  background: #f2f4fa;
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 27px;
-}
-.faq h2 {
-  font-size: var(--font-xxl);
-  line-height: 40px;
-  font-weight: 600;
-}
-.faq summary {
-  cursor: pointer;
-  width: 448px;
-  min-height: 54px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: color 0.2s ease;
-  list-style: none;
-}
-.faq summary:hover {
-  color: rgba(0, 0, 0, 1);
-}
-.faq details > p {
-  max-width: 448px;
-  padding-top: 10px;
-}
-.faq details > p {
-  line-height: 30px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-/* fixed elements css */
-
 .fixed-apply-button {
   position: fixed;
   display: flex;
@@ -516,4 +473,71 @@ hr.line:after {
 .fixed-inquiry-button img {
   width: 60px;
   height: 60px;
+}
+
+/*  Curriculum Re */
+.curriculum-re{
+  height: 648px;
+  padding: 0 326px;
+  background: linear-gradient(135deg, #324B96, #94475B);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 64px;
+}
+.hero-text{
+  flex-shrink: 0;
+  min-width: 480px;
+}
+.hero-text h2 {
+  font-size: calc(var(--body) * 3.2);
+  font-weight: 500;
+  line-height: 80px;
+  color: var(--white);
+  text-align: right;
+  white-space: pre-line;
+  flex: 1;
+}
+.hero-text .core {
+  font-weight: 700;
+  color: #7CC5FC;
+}
+.insight-boxes {
+  flex: 1;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  gap: 66px;
+  max-width: 316px;
+}
+.speech-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.10);
+  padding: 15px 11px;
+  width: 316px;
+  gap:10px;
+}
+.speech-box img {
+  width: 100px;
+  object-fit: contain;
+}
+.speech-box p {
+  font-size: calc(var(--body) * 0.8);
+  line-height: 20px;
+  color: #454545;
+}
+.speech-box::after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 9px 15px;
+  border-style: solid;
+  border-color: transparent var(--white)  transparent transparent;
+  position: absolute;
+  top: 20px;
+  right: 100%;
 }

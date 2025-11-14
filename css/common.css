@@ -4,7 +4,7 @@
 
 :root {
   /* Layout */
-  --container:1272px;
+  --container: 1272px;
 
   /* color */
   --main-color: rgba(50, 75, 150, 1);
@@ -28,11 +28,11 @@
   --font-xxs: calc(var(--body) * 0.5); /* 10px */
 }
 /* Layout */
-.container{
+.container {
   width: var(--container);
   margin: 0 auto;
 }
-.hidden{
+.hidden {
   position: absolute;
   left: 0;
   clip-path: inset(50%);
@@ -40,7 +40,7 @@
   height: 1px;
   overflow: hidden;
 }
-.btn{
+.btn {
   height: 45px;
   padding: 0 50px;
   background: var(--main-color);
@@ -51,9 +51,20 @@
   align-items: center;
   border-radius: 5px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 /*  COLOR */
-.bnt_bg{
-  background: #36436B;
+.bnt_bg {
+  background: #36436b;
 }
 /*  HEADER  */
 header {
@@ -64,23 +75,23 @@ header {
   top: 0;
   z-index: 2;
 }
-header  > div{
+header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-h1{
+h1 {
   margin: 0;
 }
 h1 > a {
   display: block;
 }
-header nav ul{
+header nav ul {
   display: flex;
   align-items: center;
   gap: 23px;
 }
-header nav ul li:last-child{
+header nav ul li:last-child {
   font-size: 60px;
   text-transform: uppercase;
   display: flex;
@@ -97,37 +108,31 @@ body {
 
 /*  FOOTER  */
 footer {
-  height: 324px;
-  background: #2F3138;
-  padding: 54px;
+  background: #2f3138;
+  padding: 54px 0 67px;
 }
-.footer-logo {
-  margin-bottom: 34px;
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
 }
-.footer-logo img{
+.footer-logo img {
   height: auto;
   display: block;
 }
-.footer-info{
+.footer-info {
   font-size: calc(var(--body) * 0.6);
   font-weight: 500;
-  color: #D3D3D3;
+  color: #d3d3d3;
   display: flex;
   gap: 109px;
-  margin-bottom: 26px;
-  margin-left: 0;
-  margin-right: auto;
 }
-.footer-info p {
+.footer-info p:not(:last-child) {
   margin-bottom: 13px;
-}
-.footer-info p:last-child {
-  margin-bottom: 0;
 }
 .footer-links {
   display: flex;
   gap: 63px;
-  margin-bottom: 26px;
 }
 .footer-links a {
   font-size: calc(var(--body) * 0.6);
@@ -138,8 +143,8 @@ footer {
 .footer-links a:hover {
   color: var(--medium-gray);
 }
-footer > p {
-  font-size:calc(var(--body) * 0.6);
+footer .container > p {
+  font-size: calc(var(--body) * 0.6);
   font-weight: 500;
   color: var(--white);
 }

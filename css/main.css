@@ -605,6 +605,10 @@ div.active > dl dd.supplement::before {
   font-size: var(--font-xs);
 }
 
+.review .score span:nth-child(-n+5) {
+  color: gold;
+}
+
 /* information */
 .information {
   margin: 66px 0 81px;

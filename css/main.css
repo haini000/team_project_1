@@ -607,8 +607,6 @@ div.active > dl dd.supplement::before {
 
 .review .score span:nth-child(-n+5) {
   color: gold;
-
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(255, 255, 0, 0.6);
 }
 
 /* information */

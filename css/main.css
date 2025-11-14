@@ -605,8 +605,8 @@ div.active > dl dd.supplement::before {
   font-size: var(--font-xs);
 }
 
-.review .score span:nth-child(-n+5) {
-  color: gold;
+.review .score span:nth-child(-n + 5) {
+  color: #ffd700;
 }
 
 /* information */
@@ -751,6 +751,24 @@ div.active > dl dd.supplement::before {
 .fixed-inquiry-button img {
   width: 60px;
   height: 60px;
+}
+
+.fixed-scroll-top-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color);
+  border-radius: 30px;
+  bottom: 0;
+  right: 0;
+  margin: 0 30px 100px 0;
+}
+.fixed-scroll-top-button img {
+  width: 30px;
+  height: 30px;
 }
 
 /*  Curriculum Re */

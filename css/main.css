@@ -4,12 +4,6 @@
   padding: 86px 0;
 }
 
-.text-introduce .title-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title-area p:first-of-type {
   font-size: var(--font-lg);
   color: var(--medium-gray);
@@ -17,8 +11,6 @@
 }
 
 .text-introduce h2 {
-  font-size: var(--font-xxl);
-  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -36,8 +28,6 @@
 }
 
 .text-introduce ul {
-  display: flex;
-  justify-content: center;
   gap: 77px;
 }
 
@@ -68,9 +58,6 @@
 }
 
 .text-introduce .course-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 33px;
   color: white;
 }
@@ -96,9 +83,6 @@
 }
 
 .text-introduce .schedule-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: white;
   margin-top: 29px;
 }
@@ -156,8 +140,6 @@
 .reason {
   background: #36436b;
   padding: 54px;
-  display: flex;
-  flex-direction: column;
   gap: 54px;
 }
 
@@ -169,8 +151,6 @@
 }
 
 .reason ul {
-  display: flex;
-  justify-content: center;
   gap: 48px;
 }
 
@@ -246,18 +226,12 @@
 }
 
 .advantage h2 {
-  font-size: var(--font-xxl);
   margin-bottom: 70px;
-  font-weight: 600;
 }
 
 .advantage-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   gap: 24px;
-
   flex-wrap: wrap;
 }
 
@@ -360,16 +334,12 @@ hr.line:after {
 }
 
 .benefits > h2 {
-  font-size: var(--font-xxl);
   margin-bottom: 68px;
-  font-weight: 600;
 }
 
 .benefit-list {
-  display: flex;
   text-align: left;
   gap: 24px;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -415,8 +385,6 @@ hr.line:after {
 .support-list {
   margin-top: 27px;
   gap: 43px;
-  display: flex;
-  flex-direction: column;
 }
 
 .support-list li {
@@ -436,8 +404,6 @@ hr.line:after {
 }
 
 .de-cur > h2 {
-  font-size: var(--font-xxl);
-  font-weight: 600;
   margin-bottom: 70px;
 }
 
@@ -520,46 +486,41 @@ div.active > dl dd.supplement::before {
 
 /* review */
 .review {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(180deg, #6079c6, #324b96);
   position: relative;
 }
-.review::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to left, transparent, #324b96);
-  pointer-events: none;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 1619px;
-}
+.review::before,
 .review::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, transparent, #324b96);
-  pointer-events: none;
   top: 0;
   bottom: 0;
-  left: 1619px;
-  right: 0;
+  width: 299px; /* 적당한 값으로 */
+  pointer-events: none;
 }
+
+.review::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, #324b96);
+}
+
+.review::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, #324b96);
+}
+
 .review h2 {
   margin-top: 66px;
-  font-size: var(--font-xxl);
-  font-weight: 600;
   text-align: center;
   color: var(--white);
 }
 .review .content {
   width: 100%;
   margin-top: 83px;
-  display: flex;
   gap: 24px;
 }
 .review .content li {
-  width: 300px;
+  flex: 1;
   height: 243px;
   background: var(--white);
   border-radius: 5px;
@@ -597,9 +558,6 @@ div.active > dl dd.supplement::before {
   width: 150px;
   height: 35px;
   background: #36436b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 700;
   color: var(--white);
   font-size: var(--font-xs);
@@ -616,18 +574,12 @@ div.active > dl dd.supplement::before {
 }
 .information h2 {
   text-align: center;
-  font-size: var(--font-xxl);
-  font-weight: 600;
   margin-bottom: 88px;
 }
 .information .content {
-  display: flex;
-  justify-content: center;
   gap: 132px;
 }
 .information .basic-information {
-  display: flex;
-  flex-direction: column;
   gap: 27px;
 }
 .information .basic-information > div {
@@ -665,8 +617,6 @@ div.active > dl dd.supplement::before {
   color: #d3d3d3;
 }
 .information .course-information {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .information .course-information li {
@@ -729,9 +679,6 @@ div.active > dl dd.supplement::before {
   width: 180px;
   height: 60px;
   border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 10px;
   transition: 0.25s;
 }
@@ -757,9 +704,6 @@ div.active > dl dd.supplement::before {
   position: fixed;
   width: 60px;
   height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: var(--main-color);
   border-radius: 30px;
   bottom: 0;
@@ -805,9 +749,6 @@ div.active > dl dd.supplement::before {
 
 .insight-boxes {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 66px;
   max-width: 316px;
 }
@@ -852,17 +793,11 @@ div.active > dl dd.supplement::before {
 .faq {
   background: #f2f4fa;
   padding: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 27px;
 }
 
 .faq h2 {
-  font-size: var(--font-xxl);
   line-height: 40px;
-  font-weight: 600;
 }
 
 .faq summary {

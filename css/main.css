@@ -27,11 +27,11 @@
   font-size: var(--font-md);
 }
 
-.text-introduce ul {
+.text-introduce ol {
   gap: 77px;
 }
 
-.text-introduce ul li {
+.text-introduce ol li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
-.text-introduce ul li > h3 {
+.text-introduce ol li > h3 {
   display: flex;
   gap: 10px;
   color: white;
@@ -52,7 +52,7 @@
   line-height: 29px;
 }
 
-.text-introduce ul li h3 img {
+.text-introduce ol li h3 img {
   width: 29px;
   height: 29px;
 }

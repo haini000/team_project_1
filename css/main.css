@@ -408,9 +408,11 @@ hr.line:after {
 }
 
 .de-cur > h2 + div > ul {
+  position: relative;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  z-index: 1;
 }
 
 .de-cur > h2 + div > ul li {
@@ -420,10 +422,29 @@ hr.line:after {
   border-radius: 33px;
   padding: 16px;
   box-sizing: border-box;
+  transition: 0.2s 0.2s;
 }
 
-.de-cur > h2 + div > ul li:nth-child(2) {
+/* .de-cur > h2 + div > ul li:nth-child(2) {
   background-color: var(--light-blue);
+} */
+
+.de-cur > .nav {
+  position: relative;
+}
+
+.tab-menu li.active {
+  color: #fff;
+}
+
+.highlight {
+  border-radius: 33px;
+  position: absolute;
+  background-color: var(--light-blue);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .tab-contents > div {

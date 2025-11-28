@@ -216,7 +216,38 @@ footer .container>p {
   top: 10%;
   padding: 40px;
 
+  max-width: 60vh;
+  max-height: 70vh;
+  overflow: auto;
+
   line-height: 30px;
+}
+
+#popup1 hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 15px 0px;
+}
+
+#popup1 > ul:nth-of-type(2) > li {
+  margin-bottom: 20px;
+}
+
+#popup1 a {
+    color: #007bff;  
+    text-decoration: underline; 
+    transition: color 0.2s;
+    
+}
+
+#popup1 a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+#popup1 a:active {
+    color: #004085;
 }
 
 
